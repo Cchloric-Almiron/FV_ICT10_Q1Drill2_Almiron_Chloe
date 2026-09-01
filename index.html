@@ -22,7 +22,7 @@
             align-items:center;
             font-family:"Jost", sans-serif;
             margin-top:100px;
-            height:200px;
+            height:300px;
             width:400px;
             border-left:rgb(85, 8, 8) solid 10px;
             border-radius:30px;
@@ -69,27 +69,13 @@
             align-items:center;
             font-family:"Jost", sans-serif;
             margin-top:50px;
-            height:400px;
+            height:500px;
             width:400px;
             border-left:rgb(85, 8, 8) solid 10px;
             border-radius:30px;
             padding:20px;
             box-shadow:10px 10px rgba(89, 2, 2, 0.947);
-        }
-
-        #ResultB{
-            background-color:#a7333fb1;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            font-family:"Jost", sans-serif;
-            margin-top:50px;
-            height:400px;
-            width:400px;
-            border-left:rgb(85, 8, 8) solid 10px;
-            border-radius:30px;
-            padding:20px;
-            box-shadow:10px 10px rgba(89, 2, 2, 0.947);
+            margin-bottom:50px;
         }
         
     </style>
@@ -106,19 +92,12 @@
         <input type="text" id="user_input" placeholder="Enter your username">
         <br><br>
         <input type="button" py-click="greetings" value="Sign-in">
+
+        <div id="result" style="color:#ffffff; font-size:30px;"></div>
+        <py-script src="main.py"></py-script>
         
 
     </form>
-    </div>
-    </center>
-
-    <center>
-    
-    <div id="ResultB">
-        <h1>Result:</h1>
-        <br>
-        <div id="result" style="color:#ffffff; font-size:30px;"></div>
-        <py-script src="main.py"></py-script>
     </div>
     </center>
 
@@ -137,10 +116,16 @@
         <input type="button" py-click="multiplying_numbers" value="Multiply">
         <input type="button" py-click="dividing_numbers" value="Divide">
         <input type="button" onclick="window.location.reload()" value="Clear">
+
+        <br><br>
+
+        <h2>Results:</h2>
+        <div id="results" style="color:#ffffff; font-size:30px;"></div>
+        <py-script src="main.py"></py-script>
+
     </form>
 
     </div>
     </center>
-
 </body>
 </html>
