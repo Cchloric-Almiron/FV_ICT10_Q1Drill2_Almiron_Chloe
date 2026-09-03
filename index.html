@@ -12,7 +12,10 @@
     <style>
 
         body{
-            background-color:#74121D;
+            background-image: url("https://i.pinimg.com/1200x/cd/4f/79/cd4f798f183649bc13d2f5a751c96433.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
         }
 
         #MainB{
@@ -28,6 +31,7 @@
             border-radius:30px;
             padding:20px;
             box-shadow:2px 2px rgba(89, 2, 2, 0.947);
+            
         }
 
         input[type="text"]{
@@ -69,7 +73,7 @@
             align-items:center;
             font-family:"Jost", sans-serif;
             margin-top:50px;
-            height:500px;
+            height:600px;
             width:400px;
             border-left:rgb(85, 8, 8) solid 10px;
             border-radius:30px;
@@ -77,7 +81,20 @@
             box-shadow:10px 10px rgba(89, 2, 2, 0.947);
             margin-bottom:50px;
         }
-        
+
+        #results{
+            background-color:#74121D;
+            justify-content:center;
+            align-items:center;
+            font-family:"Jost", sans-serif;
+            height:150px;
+            width:350px;
+            border-radius:50px;
+            text-align:center;
+            padding:50px;
+            border:2px dashed #430a11;
+              
+        }
     </style>
 
 </head>
@@ -93,7 +110,9 @@
         <br><br>
         <input type="button" py-click="greetings" value="Sign-in">
 
-        <div id="result" style="color:#ffffff; font-size:30px;"></div>
+        <br>
+
+        <div id="result" style="color:#ffffff; font-size:20px;"></div>
         <py-script src="main.py"></py-script>
         
 
@@ -115,16 +134,23 @@
         <input type="button" py-click="subtracting_numbers" value="Subtract">
         <input type="button" py-click="multiplying_numbers" value="Multiply">
         <input type="button" py-click="dividing_numbers" value="Divide">
+        <input type="button" py-click="floor_dividing_numbers" value="FloorDivide">
+        <input type="button" py-click="moduling_numbers" value="Moduling">
+        <input type="button" py-click="exponential_numbers" value="Exponential">
         <input type="button" onclick="window.location.reload()" value="Clear">
 
         <br><br>
 
         <h2>Results:</h2>
-        <div id="results" style="color:#ffffff; font-size:30px;"></div>
+        <div id="results" style="color:#ffffff; font-size:20px;"></div>
         <py-script src="main.py"></py-script>
 
     </form>
 
+    </div>
+    </center>
+</body>
+</html>
     </div>
     </center>
 </body>
